@@ -1,0 +1,23 @@
+{
+  "name": "auto-image-compression",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "sharp": "^0.25.4"
+  },
+  "lint-staged": {
+    "*.{png,jpg,jpeg,git,svg}": [
+      "node ./compress-image.js"
+    ]
+  }
+}
